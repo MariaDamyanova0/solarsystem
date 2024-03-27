@@ -1,4 +1,115 @@
 :root {
 
-    --main-text-color: #ccc;
+    /*
+    Тук можеш да си правиш променливи и да ги използваш през var() функцията.
+    */
+
+    --main-dark-text-color: #232121;
+    --main-light-text-color: #f7f7f7;
+    --main-dark-bg-color: #232121;
+    --main-light-bg-color: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    padding: 1rem 10rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+    gap: 1.5rem;
+}
+
+nav ul li {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    filter: grayscale(90%);
+    transition: filter 0.2s;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li:hover {
+    filter: grayscale(0%);
+}
+
+.active {
+    filter: grayscale(0%);
+}
+
+#sun {
+    background-image: url("../IMG/sun.png");
+    scale: 1.8;
+    margin-right: 3rem;
+}
+
+#mercury {
+    background-image: url("../IMG/mercury.png");
+}
+
+#venus {
+    background-image: url("../IMG/venus.png");
+}
+
+#earth {
+    background-image: url("../IMG/earth.png");
+}
+
+#moon {
+    background-image: url("../IMG/moon.png");
+}
+
+#mars {
+    background-image: url("../IMG/mars.png");
+}
+
+#jupiter {
+    background-image: url("../IMG/jupiter.png");
+}
+
+#saturn {
+    background-image: url("../IMG/saturn.png");
+    scale: 2.5;
+    margin: 0 1rem;
+}
+
+#uranus {
+    background-image: url("../IMG/uranus.png");
+}
+
+#neptune {
+    background-image: url("../IMG/neptune.png");
+}
+
+#pluto {
+    background-image: url("../IMG/pluto.png");
 }
